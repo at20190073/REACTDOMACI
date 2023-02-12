@@ -9,7 +9,7 @@ return(
                 <ul className="nav__list">
                 
                     <li className="nav__item">   <Link className="link" to='/'>Pocetna</Link></li>
-                    <li className="nav__item"> <Link  className="link" to='/jela'>Tradicionalna jela</Link></li>
+                    <li className="nav__item"> <Link  className="link" to='/tradicionalnaJela'>Tradicionalna jela</Link></li>
                     <li className="nav__item"> <Link   className="link" to='/omiljeni'>Omiljena jela</Link></li>
 
                     <li className="nav__item"> 

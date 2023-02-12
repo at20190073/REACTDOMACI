@@ -14,7 +14,7 @@ function App() {
 {
   id:1,
   naziv:"Napolitanska pica",
-  slika:"https://www.google.com/url?sa=i&url=https%3A%2F%2Fzena.blic.rs%2Flifestyle%2Fpica-napolitana-je-na-uneskovoj-listi-a-evo-koja-pravila-treba-da-sledite-da-bi-vam%2Fb3qv0kp&psig=AOvVaw3xmh4I5xgXYrikfZq7mba2&ust=1676276617819000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCLD6k4rHj_0CFQAAAAAdAAAAABAJ",
+  slika:"http://ocdn.eu/images/pulscms/MjM7MDA_/c8d058a3bc905f45c0f693e0538e7b8a.jpeg",
   opis:"Najbolja pica na svetu se pravi u Napulju. Ova pica je zaštićena od strane trgovinske asocijacije, a sastojci kao što su morska so, visokokvalitetno pšenično brašno, isključiva upotreba triju posebnih vrsta paradajza, ručno valjano testo i striktna upotreba peći na drva, su samo neke od odlika spremanja najukusnije pice na svetu.",
   drzava:"Italija",
   omiljeni:0
@@ -30,7 +30,7 @@ function App() {
 {
 id:3,
 naziv:"Kebab",
-slika:"https://fagor.rs/wp-content/uploads/2021/09/persijski-kebab-1200x900.jpg",
+slika:"https://www.thespruceeats.com/thmb/ao7czXh1afSBamtQnDUilsLD3uc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/doner-kebab-recipe-4171703-hero-01-c14d8b7189df4685a50bae311317f831.jpg",
 opis:"U svetu postoji više vrsta kebaba, zavisi o čijoj kuhinji se radi. Iranski tip kebaba se naziva „Kebab Kenjeh“, veoma je popularan u Aziji, a poznat je širom sveta. Jagnjetina je tradicionalno meso koje se koristi u spremanju. Pored nje, za pripremanje iranskog kebaba se koriste i maslinovo ulje, limunov sok, so i biber. Uobičajeno se služi sa pirinčem, grilovanim paradajzom i crnim lukom.",
 drzava:"Iran",
 omiljeni:0
@@ -110,7 +110,7 @@ function izbaci(id){
       <NavBar pretrazi={pretrazi}></NavBar>
       <Routes>
         <Route path="/" element={<Pocetna></Pocetna>}></Route>
-        <Route path="/tradicionalnaJela" element={<TradicionalnaJela kriterijum={krterijumPretrage}  festivali={svaTradicionalnaJela} dodaj={dodaj}></TradicionalnaJela>}></Route>
+        <Route path="/tradicionalnaJela" element={<TradicionalnaJela kriterijum={krterijumPretrage}  tradicionalnaJela={svaTradicionalnaJela} dodaj={dodaj}></TradicionalnaJela>}></Route>
         <Route path="/omiljeni" element={<Omiljeni kriterijum={krterijumPretrage}  tradicionalnaJela={omiljenoJ} izbaci={izbaci}></Omiljeni>}></Route>
       </Routes>
      
